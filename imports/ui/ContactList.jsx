@@ -10,7 +10,7 @@ export const ContactList = () => {
   return (
     <>
       <h3>Contact List</h3>
-      <table border="1" bgcolor="#ffffff">
+      <table border="2" bgcolor="#ffffff">
       <tr >
         <th>Name</th>
         <th>Email</th>
