@@ -3,3 +3,5 @@ Meteor Wallet
 - Insert and fetch Contacts
 - Deploy to Galaxy
 - Styled with Tailwind CSS
+- Without insecure package
+- Use Meteor Methods
