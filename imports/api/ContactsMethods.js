@@ -12,8 +12,8 @@ Meteor.methods({
     }
     return ContactsCollection.insert({ name, email, imageUrl, createdAt: new Date() });
   },
-  'contacts.remove'({ contactId }) {
+  'contacts.archive'({ contactId }) {
     check(contactId, String);
-    ContactsCollection.remove(contactId);
+    ContactsCollection.update({ _id: contactId }, { $set: { archived: true } });
   }
 })
